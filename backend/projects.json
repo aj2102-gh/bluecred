@@ -1,0 +1,72 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "ngo_name": "asd",
+      "title": "wdf",
+      "lat": "234",
+      "lon": "234",
+      "ngo_wallet": "dfg",
+      "community_wallet": "asd",
+      "ipfs_cid": "bafy7ptgoaor95",
+      "ipfs_url": "ipfs://bafy7ptgoaor95/bb.png",
+      "ai_passed": true,
+      "ai_confidence": 0.913,
+      "ai_score": 0.516,
+      "status": "Verified",
+      "mock_tx_hash": "0x0eac81ae6cc84c2341bb0957",
+      "created_at": 1758095711156
+    },
+    {
+      "id": 2,
+      "ngo_name": "swdf",
+      "title": "wsdef",
+      "lat": "234",
+      "lon": "34",
+      "ngo_wallet": "qwe",
+      "community_wallet": "wef",
+      "ipfs_cid": "bafyjb5hyhrn0m",
+      "ipfs_url": "ipfs://bafyjb5hyhrn0m/bb.png",
+      "ai_passed": true,
+      "ai_confidence": 0.971,
+      "ai_score": 0.589,
+      "status": "Pending",
+      "mock_tx_hash": null,
+      "created_at": 1758095963559
+    },
+    {
+      "id": 3,
+      "ngo_name": "The Mangrove Alliance",
+      "title": "mangrove ",
+      "lat": "69.9",
+      "lon": "42.0",
+      "ngo_wallet": "0xe6574F02A9b88905C5d5CB4AE6b76C7dF20749e8",
+      "community_wallet": "0xe654yhfg6yrthjt6r5d5CB4AE6b76C7dF20749e8",
+      "ipfs_cid": "bafyu5hc8z6lz6",
+      "ipfs_url": "ipfs://bafyu5hc8z6lz6/WhatsApp Image 2025-09-10 at 11.19.32 AM.jpeg",
+      "ai_passed": true,
+      "ai_confidence": 0.751,
+      "ai_score": 0.314,
+      "status": "Verified",
+      "mock_tx_hash": "0xbefb1aca1ff0b173e2cafef7",
+      "created_at": 1758105904804
+    },
+    {
+      "id": 4,
+      "ngo_name": "abcjs",
+      "title": "qasdfg",
+      "lat": "2345",
+      "lon": "345",
+      "ngo_wallet": "sdfgh",
+      "community_wallet": "fgh",
+      "ipfs_cid": "bafy7bgzameb4t",
+      "ipfs_url": "ipfs://bafy7bgzameb4t/WhatsApp Image 2025-09-17 at 12.22.05 AM.jpeg",
+      "ai_passed": true,
+      "ai_confidence": 0.771,
+      "ai_score": 0.339,
+      "status": "Pending",
+      "mock_tx_hash": null,
+      "created_at": 1758115698835
+    }
+  ]
+}

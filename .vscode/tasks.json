@@ -1,0 +1,79 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Backend: dev",
+      "type": "npm",
+      "script": "dev",
+      "path": "backend",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Frontend: dev",
+      "type": "npm",
+      "script": "dev",
+      "path": "frontend",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Start Dev (backend+frontend)",
+      "dependsOn": [
+        "Backend: dev",
+        "Frontend: dev"
+      ],
+      "dependsOrder": "parallel",
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    }
+  ]
+}
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Check backend CORS preflight",
+			"type": "shell",
+			"command": "curl",
+			"args": [
+				"-i",
+				"-X",
+				"OPTIONS",
+				"http://localhost:5000/api/submit",
+				"-H",
+				"Origin: http://localhost:5173",
+				"-H",
+				"Access-Control-Request-Method: POST",
+				"-H",
+				"Access-Control-Request-Headers: content-type"
+			]
+		},
+		{
+			"label": "Re-check backend CORS preflight",
+			"type": "shell",
+			"command": "curl",
+			"args": [
+				"-i",
+				"-X",
+				"OPTIONS",
+				"http://localhost:5000/api/submit",
+				"-H",
+				"Origin: http://localhost:5173",
+				"-H",
+				"Access-Control-Request-Method: POST",
+				"-H",
+				"Access-Control-Request-Headers: content-type"
+			]
+		}
+	]
+}
