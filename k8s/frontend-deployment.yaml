@@ -1,0 +1,28 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bluecarbon-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bluecarbon-frontend
+  template:
+    metadata:
+      labels:
+        app: bluecarbon-frontend
+    spec:
+      containers:
+        - name: frontend
+          image: YOUR_DOCKERHUB_USERNAME/bluecarbon-frontend:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "64Mi"
+            limits:
+              cpu: "300m"
+              memory: "128Mi"
